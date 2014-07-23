@@ -295,15 +295,7 @@
 
 -(void)dismissKeyboard
 {
-    [passwordField resignFirstResponder];
-    [usernameField resignFirstResponder];
-    [emailField resignFirstResponder];
-    [phoneField resignFirstResponder];
-}
-
--(void)viewDidLoad
-{
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget: self action:@selector(dismissKeyboard);
+    
 }
 - (void)didReceiveMemoryWarning
 
