@@ -7,12 +7,22 @@
 //
 
 #import "MFLTableViewController.h"
+UILabel * someLabel;
 
 
+        ///PROPERTIES///
 
 @interface MFLTableViewController ()
+@property (nonatomic) NSArray * info;
 
-@property (nonatomic) NSArray * listItems;
+/*
+@property (nonatomic) NSArray * days;
+@property (nonatomic) NSArray * students;
+@property (nonatomic) NSArray * colors;
+@property (nonatomic) NSArray * fontSizes;
+ */
+ 
+
 
 @end
 
@@ -25,60 +35,136 @@
         
         // Custom initialization
         
-       /* self.listItems = [[NSArray alloc]initWithObjects:@"Monday",@"Tuesday",@"Wednesday",@"Thursday", nil];
-        self.listItems = [NSArray arrayWithObjects:@"Monday",@"Tuesday",@"Wednesday",@"Thursday", nil];
-        */
+        /// ARRAYS ///
+      /*
+        self.days = @[@"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday" ,@"Saturday", @"Sunday"];
+        self.students = @[@"Reagan", @"Libby", @"Vianne", @"Treise", @"Melanie", @"Michael", @"Katlyn"];
+        self.colors = @[[UIColor redColor], [UIColor orangeColor], [UIColor yellowColor], [UIColor greenColor], [UIColor blueColor], [UIColor purpleColor], [UIColor brownColor]];
+        self.fontSizes = @[@20.0, @23.0, @26.0, @29.0, @32.0, @35.0, @38.0];
+       */
         
-        self.listItems = @[@"Monday",@"Tuesday",@"Wednesday",@"Thursday"];
+self.info = @[
+              @{
+                  @"day": @"Monday",
+                  @"color": [UIColor redColor],
+                  @"student": @"Reagan",
+                  @"size": @20.0
+                  },
+              @{
+                  @"day": @"Tuesday",
+                  @"color": [UIColor orangeColor],
+                  @"student": @"Libby",
+                  @"size": @23.0
+                  },
+              @{
+                  @"day": @"Wednesday",
+                  @"color": [UIColor yellowColor],
+                  @"student": @"Vianne",
+                  @"size": @26.0
+                  },
+              @{
+                  @"day": @"Thursday",
+                  @"color": [UIColor greenColor],
+                  @"student": @"Treise",
+                  @"size": @29.0
+                  },
+              @{
+                  @"day": @"Friday",
+                  @"color": [UIColor blueColor],
+                  @"student": @"Melanie",
+                  @"size": @32.0
+                  },
+              @{
+                  @"day": @"Saturday",
+                  @"color": [UIColor purpleColor],
+                  @"student": @"Michael",
+                  @"size": @35.0
+                  },
+              @{
+                  @"day": @"Sunday",
+                  @"color": [UIColor brownColor],
+                  @"student": @"Katlyn",
+                  @"size": @38.0
+                  },
+              ];
         
-        }
+    }
+    
     return self;
    
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-#pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
-    return self.listItems.count;
+    return self.info.count;
+    
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell * cell = [[UITableViewCell alloc] init];
+    UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     
-    // NSString * listItem = [self.listItems objectAtIndex:indexPath.row];
     
-    NSString * listItem = self.listItems[indexPath.row];
+    NSDictionary * infoItem = self.info[indexPath.row];
     
-    NSLog(@"listItem = %@", listItem);
+    cell.textLabel.text =infoItem[@"day"];
     
-    cell.textLabel.text = listItem;
+    cell.backgroundColor = infoItem[@"color"];
     
-    cell.backgroundColor = [UIColor greenColor];
+    cell.detailTextLabel.text =infoItem[@"student"];
     
-    // Configure the cell...
+    cell.textLabel.font = [UIFont systemFontOfSize:[infoItem[@"size"] intValue]];
     
+    /*    ///DAYS///
+    
+    NSString * day = self.days[indexPath.row];
+    cell.textLabel.text = day;
+    NSLog(@"listItem = %@", day);
+    
+        ///STUDENTS///
+    
+    NSString * student = self.students[indexPath.row];
+    cell.detailTextLabel.text = student;
+    NSLog(@"ListItem = %@", student);
+    
+        ///COLORS///
+    
+    UIColor * color = self.colors[indexPath.row];
+    cell.backgroundColor = color;
+    NSLog(@"ListItem = %@", color);
+    
+    
+        ///FONTSIZES///
+    
+    NSNumber * font = self.fontSizes [indexPath. row];
+    cell.textLabel.font = [UIFont systemFontOfSize:[font intValue]];
+    NSLog(@"ListItem = %@", font);
+    */
+
     return cell;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*

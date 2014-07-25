@@ -129,7 +129,6 @@
     
     usernameField.placeholder = @"username";
     
-    
     usernameField.delegate = self;
     
     usernameField.textColor = [UIColor colorWithRed:0.055f green:0.490f blue:0.694f alpha:1.0f];
