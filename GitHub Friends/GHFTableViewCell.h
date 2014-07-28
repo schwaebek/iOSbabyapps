@@ -10,6 +10,10 @@
 
 @interface GHFTableViewCell : UITableViewCell
 
+@property (nonatomic) NSDictionary * friendInfo;
+
+@property (nonatomic) UINavigationController * navigationController;
+
 
 /*
 Everything in a header file is PUBLIC (aka visible to all other classes).
@@ -29,6 +33,6 @@ Everything in a header file is PUBLIC (aka visible to all other classes).
  
  */
 
-@property (nonatomic) NSDictionary * friendInfo;
+
 
 @end

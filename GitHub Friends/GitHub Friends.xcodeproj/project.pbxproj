@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2772F6931986B70800DC2D9F /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2772F68F1986B70800DC2D9F /* downArrow.png */; };
+		2772F6941986B70800DC2D9F /* profileArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2772F6901986B70800DC2D9F /* profileArrow.png */; };
+		2772F6951986B70800DC2D9F /* searchButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2772F6911986B70800DC2D9F /* searchButton.png */; };
+		2772F6961986B70800DC2D9F /* upArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2772F6921986B70800DC2D9F /* upArrow.png */; };
+		27A228931986A07D00B7709D /* GRAGithubRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A228921986A07D00B7709D /* GRAGithubRequest.m */; };
+		27E937DC1982A7EF000B0F65 /* GHFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E937DB1982A7EF000B0F65 /* GHFViewController.m */; };
 		27FB1A9F19813F3300FD2987 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB1A9E19813F3300FD2987 /* Foundation.framework */; };
 		27FB1AA119813F3300FD2987 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB1AA019813F3300FD2987 /* CoreGraphics.framework */; };
 		27FB1AA319813F3300FD2987 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB1AA219813F3300FD2987 /* UIKit.framework */; };
@@ -34,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2772F68F1986B70800DC2D9F /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrow.png; sourceTree = "<group>"; };
+		2772F6901986B70800DC2D9F /* profileArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileArrow.png; sourceTree = "<group>"; };
+		2772F6911986B70800DC2D9F /* searchButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchButton.png; sourceTree = "<group>"; };
+		2772F6921986B70800DC2D9F /* upArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upArrow.png; sourceTree = "<group>"; };
+		27A228911986A07D00B7709D /* GRAGithubRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRAGithubRequest.h; path = "../Github Request/GRAGithubRequest.h"; sourceTree = "<group>"; };
+		27A228921986A07D00B7709D /* GRAGithubRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GRAGithubRequest.m; path = "../Github Request/GRAGithubRequest.m"; sourceTree = "<group>"; };
+		27E937DA1982A7EF000B0F65 /* GHFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHFViewController.h; sourceTree = "<group>"; };
+		27E937DB1982A7EF000B0F65 /* GHFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHFViewController.m; sourceTree = "<group>"; };
 		27FB1A9B19813F3300FD2987 /* GitHub Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Friends.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FB1A9E19813F3300FD2987 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27FB1AA019813F3300FD2987 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,6 +97,10 @@
 		27FB1A9219813F3300FD2987 = {
 			isa = PBXGroup;
 			children = (
+				2772F68F1986B70800DC2D9F /* downArrow.png */,
+				2772F6901986B70800DC2D9F /* profileArrow.png */,
+				2772F6911986B70800DC2D9F /* searchButton.png */,
+				2772F6921986B70800DC2D9F /* upArrow.png */,
 				27FB1ACD19813F8100FD2987 /* Controllers */,
 				27FB1AA419813F3300FD2987 /* GitHub Friends */,
 				27FB1ABD19813F3300FD2987 /* GitHub FriendsTests */,
@@ -156,8 +174,12 @@
 			children = (
 				27FB1ACE19813FA800FD2987 /* GHFTableViewController.h */,
 				27FB1ACF19813FA800FD2987 /* GHFTableViewController.m */,
+				27A228911986A07D00B7709D /* GRAGithubRequest.h */,
+				27A228921986A07D00B7709D /* GRAGithubRequest.m */,
 				27FB1AD11981483400FD2987 /* GHFTableViewCell.h */,
 				27FB1AD21981483400FD2987 /* GHFTableViewCell.m */,
+				27E937DA1982A7EF000B0F65 /* GHFViewController.h */,
+				27E937DB1982A7EF000B0F65 /* GHFViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -238,8 +260,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2772F6931986B70800DC2D9F /* downArrow.png in Resources */,
 				27FB1AA919813F3300FD2987 /* InfoPlist.strings in Resources */,
 				27FB1AB119813F3300FD2987 /* Images.xcassets in Resources */,
+				2772F6941986B70800DC2D9F /* profileArrow.png in Resources */,
+				2772F6961986B70800DC2D9F /* upArrow.png in Resources */,
+				2772F6951986B70800DC2D9F /* searchButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,10 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E937DC1982A7EF000B0F65 /* GHFViewController.m in Sources */,
 				27FB1AAF19813F3300FD2987 /* GHFAppDelegate.m in Sources */,
 				27FB1AD31981483400FD2987 /* GHFTableViewCell.m in Sources */,
 				27FB1AD019813FA800FD2987 /* GHFTableViewController.m in Sources */,
 				27FB1AAB19813F3300FD2987 /* main.m in Sources */,
+				27A228931986A07D00B7709D /* GRAGithubRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +486,7 @@
 				27FB1AC919813F3300FD2987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27FB1ACA19813F3300FD2987 /* Build configuration list for PBXNativeTarget "GitHub FriendsTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +495,7 @@
 				27FB1ACC19813F3300FD2987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
