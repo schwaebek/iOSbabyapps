@@ -30,7 +30,7 @@
         // Initialization code
         
         //Name label
-        friendName = [[UILabel alloc] initWithFrame:CGRectMake(105, 10, 200, 40)];
+        friendName = [[UILabel alloc] initWithFrame:CGRectMake(105, 1, 200, 40)];
         friendName.textColor = [UIColor lightGrayColor];
         [self.contentView addSubview: friendName];
         friendName.font = [UIFont fontWithName: @"HelveticaNeue-Ultralight" size: 25];
@@ -45,7 +45,7 @@
         [self.contentView addSubview: following];
         following.font = [UIFont fontWithName:@"HelveticaNeue-light" size:15];
     
-        location = [[UILabel alloc] initWithFrame:CGRectMake(110, 15, 200, 55)];
+        location = [[UILabel alloc] initWithFrame:CGRectMake(105, 15, 200, 55)];
         location.textColor = [UIColor lightGrayColor];
         [self.contentView addSubview:location];
         location.font = [UIFont fontWithName:@"HelveticaNeue-light" size:15];
@@ -58,7 +58,11 @@
         
         
         
-        //////////friendImage = [UIColor grayColor];
+        //////////
+       /* if ([friendInfo [@"followers"]integerValue] > [friendInfo [@"following"]integerValue]) {
+            NSLog(@"There is more follower than following");
+        }else if ([friendInfo [@"followers"]integerValue] < [friendInfo [@"following"]integerValue]) {
+            NSLog(@"There is more following than followers"); */
 
         
         //Gist button
@@ -89,7 +93,7 @@
         profileButton.titleLabel.textColor = [UIColor whiteColor];
         profileButton.backgroundColor = [UIColor colorWithRed:0.227f green:0.227f blue:0.227f alpha:1.0f];
         profileButton.layer.cornerRadius = 11.0;
-        [profileButton addTarget:self action:@selector(arrowButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+        [profileButton addTarget:self action:@selector(profileButtonClicked) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:profileButton];
         profileButton.titleLabel.font = [UIFont fontWithName: @"HelveticaNeue-light" size: 10];
         profileButton.layer.borderWidth = 1.0;

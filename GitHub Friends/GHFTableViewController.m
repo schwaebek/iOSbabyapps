@@ -62,6 +62,7 @@ UIButton * numberButton;
     
     self.tableView.rowHeight = 100;
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.tableView.backgroundColor = [UIColor colorWithRed:0.227f green:0.227f blue:0.227f alpha:1.0f];
     //[mutableCopy];
     
     return self;
@@ -69,16 +70,19 @@ UIButton * numberButton;
 }
 - (void)viewDidLoad
 {
+
     [super viewDidLoad];
     
     UIView * headerView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 250.0, 50.0)];
-    
-    
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
+    [tap setCancelsTouchesInView:NO];
+
     searchField = [[UITextField alloc] initWithFrame: CGRectMake(8.0, 8.0, 250.0, 35.0)];
     searchField.backgroundColor = [UIColor whiteColor];
     searchField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     searchField.autocorrectionType = UITextAutocorrectionTypeNo;
-    searchField.placeholder = @"  search";
+    searchField.placeholder = @"search";
     searchField.delegate = self;
     searchField.textColor = [UIColor blackColor];
     searchField.text = @"";
@@ -86,6 +90,10 @@ UIButton * numberButton;
     [headerView addSubview:searchField];
     searchField.layer.cornerRadius = 10.0;
     //searchField.textInputVie
+    
+    UIView * searchSpacing = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    [searchField setLeftViewMode:UITextFieldViewModeAlways];
+    [searchField setLeftView:searchSpacing];
 
     
     
@@ -131,6 +139,10 @@ UIButton * numberButton;
     [GRAGithubRequest saveUsers:githubFriends];
 }
 
+-(void)dismissKeyboard
+{
+    [searchField resignFirstResponder];
+}
 
 -(BOOL)searchFieldShouldReturn: (UITextField *)searchField
 {
