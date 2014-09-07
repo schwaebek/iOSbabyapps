@@ -104,10 +104,7 @@
         UIImage * profileImage = [UIImage imageNamed:@"profileArrow"];
         [profileButton setImage:profileImage forState:UIControlStateNormal];
         [self.contentView addSubview:profileButton];
-        
-        
-       
-        
+      
         
     }
     return self;

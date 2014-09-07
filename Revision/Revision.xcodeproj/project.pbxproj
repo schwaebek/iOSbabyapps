@@ -19,6 +19,7 @@
 		274C7B471993A3DA002AA195 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C7B2F1993A3DA002AA195 /* UIKit.framework */; };
 		274C7B4F1993A3DA002AA195 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 274C7B4D1993A3DA002AA195 /* InfoPlist.strings */; };
 		274C7B511993A3DA002AA195 /* RevisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C7B501993A3DA002AA195 /* RevisionTests.m */; };
+		274C7B5C1993AB14002AA195 /* REVCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 274C7B5B1993AB14002AA195 /* REVCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		274C7B4C1993A3DA002AA195 /* RevisionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RevisionTests-Info.plist"; sourceTree = "<group>"; };
 		274C7B4E1993A3DA002AA195 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		274C7B501993A3DA002AA195 /* RevisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RevisionTests.m; sourceTree = "<group>"; };
+		274C7B5A1993AB14002AA195 /* REVCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REVCalculator.h; sourceTree = "<group>"; };
+		274C7B5B1993AB14002AA195 /* REVCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REVCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				274C7B3B1993A3DA002AA195 /* REVAppDelegate.m */,
 				274C7B3D1993A3DA002AA195 /* Images.xcassets */,
 				274C7B321993A3DA002AA195 /* Supporting Files */,
+				274C7B5A1993AB14002AA195 /* REVCalculator.h */,
+				274C7B5B1993AB14002AA195 /* REVCalculator.m */,
 			);
 			path = Revision;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 			files = (
 				274C7B3C1993A3DA002AA195 /* REVAppDelegate.m in Sources */,
 				274C7B381993A3DA002AA195 /* main.m in Sources */,
+				274C7B5C1993AB14002AA195 /* REVCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

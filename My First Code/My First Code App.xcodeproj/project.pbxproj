@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277326C3199E7D0800FD082A /* everything2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 277326C2199E7D0800FD082A /* everything2.wav */; };
+		277326C5199E936000FD082A /* everythingGuy5.png in Resources */ = {isa = PBXBuildFile; fileRef = 277326C4199E936000FD082A /* everythingGuy5.png */; };
+		277326C7199E949F00FD082A /* guy.png in Resources */ = {isa = PBXBuildFile; fileRef = 277326C6199E949F00FD082A /* guy.png */; };
 		27C162B7197E99E000AFDCA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C162B6197E99E000AFDCA5 /* Foundation.framework */; };
 		27C162B9197E99E000AFDCA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C162B8197E99E000AFDCA5 /* CoreGraphics.framework */; };
 		27C162BB197E99E000AFDCA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C162BA197E99E000AFDCA5 /* UIKit.framework */; };
@@ -33,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		277326C2199E7D0800FD082A /* everything2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = everything2.wav; sourceTree = "<group>"; };
+		277326C4199E936000FD082A /* everythingGuy5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = everythingGuy5.png; sourceTree = "<group>"; };
+		277326C6199E949F00FD082A /* guy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guy.png; sourceTree = "<group>"; };
 		27C162B3197E99E000AFDCA5 /* My First Code App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My First Code App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C162B6197E99E000AFDCA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27C162B8197E99E000AFDCA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,6 +86,9 @@
 		27C162AA197E99E000AFDCA5 = {
 			isa = PBXGroup;
 			children = (
+				277326C4199E936000FD082A /* everythingGuy5.png */,
+				277326C2199E7D0800FD082A /* everything2.wav */,
+				277326C6199E949F00FD082A /* guy.png */,
 				27C162E5197E9CCB00AFDCA5 /* Controllers */,
 				27C162BC197E99E000AFDCA5 /* My First Code App */,
 				27C162D5197E99E000AFDCA5 /* My First Code AppTests */,
@@ -233,8 +242,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277326C5199E936000FD082A /* everythingGuy5.png in Resources */,
 				27C162C1197E99E000AFDCA5 /* InfoPlist.strings in Resources */,
 				27C162C9197E99E000AFDCA5 /* Images.xcassets in Resources */,
+				277326C3199E7D0800FD082A /* everything2.wav in Resources */,
+				277326C7199E949F00FD082A /* guy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +464,7 @@
 				27C162E1197E99E000AFDCA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27C162E2197E99E000AFDCA5 /* Build configuration list for PBXNativeTarget "My First Code AppTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +473,7 @@
 				27C162E4197E99E000AFDCA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

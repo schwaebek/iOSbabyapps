@@ -8,6 +8,8 @@
 
 #import "MFCRootViewController.h"
 
+#import <AVFoundation/AVFoundation.h>
+
 @interface MFCRootViewController () <UITextFieldDelegate>
 
 //declare private properties and methods
@@ -24,6 +26,8 @@
     UITextField * passwordField;
     UITextField * emailField;
     UITextField * phoneField;
+    
+    AVAudioPlayer * audioPlayer;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -41,8 +45,12 @@
 
 - (void)viewDidLoad
 {
+    
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
     
     int screenHeight = [UIScreen mainScreen].bounds.size.height;
     int screenWidth = [UIScreen mainScreen].bounds.size.width;
@@ -67,11 +75,12 @@
     
     [self.view addSubview:greenButton];
     
-    UIButton * redButton = [[UIButton alloc] initWithFrame:CGRectMake(70.0, 280.0,  50.0, 50.0)];
+    UIButton * redButton = [[UIButton alloc] initWithFrame:CGRectMake(48.0, 280.0,  120.0, 113.0)];
     [redButton setTitle:@"" forState:UIControlStateNormal];
-    redButton.backgroundColor = [UIColor colorWithRed:0.996f green:0.059f blue:0.259f alpha:1.0f];
+    //redButton.backgroundColor = [UIColor colorWithRed:0.996f green:0.059f blue:0.259f alpha:1.0f];
     
-    redButton.layer.cornerRadius = 25.0;
+    //redButton.layer.cornerRadius = 25.0;
+    redButton.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"everythingGuy5"]];
     
     [redButton addTarget:self action:@selector(redButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     
@@ -269,6 +278,13 @@
 - (void)redButtonClicked
 {
     NSLog(@"button was clicked");
+
+    NSString * file = [[NSBundle mainBundle] pathForResource:@"everything2" ofType:@"wav"];
+    NSData * fileData = [NSData dataWithContentsOfFile:file];
+    audioPlayer = [[AVAudioPlayer alloc] initWithData:fileData error:nil];
+    
+    [audioPlayer play];
+
     self.view.backgroundColor = [UIColor colorWithRed:0.996f green:0.059f blue:0.259f alpha:1.0f];
 }
 - (void)yellowButtonClicked

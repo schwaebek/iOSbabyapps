@@ -10,24 +10,60 @@
 	<string>GitHub Friends</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>041B7549592655F5089341B0EA9CE619AE6033E4</key>
+		<string>https://github.com/schwaebek/Github-Request.git</string>
+		<key>2289CFB4C219128A01D3180A07C75EE6406DFC35</key>
+		<string>https://github.com/schwaebek/GitHub-Friends.git</string>
+		<key>3ABFEDC893DFB239770C3D262B955FA43F40DD2F</key>
+		<string>https://github.com/schwaebek/iOSbabyapps.git</string>
 		<key>E650EC1B-1C64-4FF4-97DA-E0ECCEC3BAE3</key>
 		<string>https://github.com/schwaebek/iOSbabyapps.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>GitHub Friends/GitHub Friends.xcodeproj/project.xcworkspace</string>
+	<string>GitHub Friends.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E650EC1B-1C64-4FF4-97DA-E0ECCEC3BAE3</key>
+		<key>041B7549592655F5089341B0EA9CE619AE6033E4</key>
+		<string>../../../Github%20Request</string>
+		<key>2289CFB4C219128A01D3180A07C75EE6406DFC35</key>
+		<string>../..</string>
+		<key>3ABFEDC893DFB239770C3D262B955FA43F40DD2F</key>
 		<string>../../..</string>
+		<key>E650EC1B-1C64-4FF4-97DA-E0ECCEC3BAE3</key>
+		<string>../../../iOSbabyapps</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/schwaebek/iOSbabyapps.git</string>
+	<string>https://github.com/schwaebek/GitHub-Friends.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E650EC1B-1C64-4FF4-97DA-E0ECCEC3BAE3</string>
+	<string>2289CFB4C219128A01D3180A07C75EE6406DFC35</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3ABFEDC893DFB239770C3D262B955FA43F40DD2F</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2289CFB4C219128A01D3180A07C75EE6406DFC35</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GitHub%20Friends</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>041B7549592655F5089341B0EA9CE619AE6033E4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Github%20Request</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
